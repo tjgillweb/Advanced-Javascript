@@ -93,3 +93,31 @@ The Web API calls that are sent to the Web API container from the Stack, like ev
 2. The asynchronous process continues in the Browser/Web API.
 3. The callback is registered in an event table and then subsequently added to the message queue when the operation is completed.
 4. Once the call stack is empty, then the **Event Loop** will grab that callback out of the message queue and add it to the call stack to run it.
+
+---------------------------------------------------------------------------------------------------------------------------------------
+So, here is a running example of JS asynchronous code in the JS Runtime and the Web API
+
+![](images/event_loop.gif)
+
+- Another common use case of asynchronous JS is when we use setTimeout to zero.
+- That doesn't mean that the code will run immediately(because its zero seconds).
+- We set the timeout to zero when we want to defer something until the stack is clear.
+```javascript
+console.log('Hi');
+setTimeout( function cb(){
+	console.log('there');
+}, 0);
+console.log('JSConfEU');
+```
+
+#### Single Threaded Example
+```javascript
+setTimeout( function (){
+	console.log('hello from the timeout');
+}, 0);
+for(var i = 0; i < 1000000000; i++) {
+	var x = i * 2;
+}
+console.log('Done with the loop');
+```
+- The callback function will only run after the loop has finished execution.
