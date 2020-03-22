@@ -11,4 +11,4 @@ Links of the resources:
 4. [The Advanced Web Developer Bootcamp on Udemy](https://www.udemy.com/course/the-advanced-web-developer-bootcamp/)
 5. [TylerMcGinnis Advanced JavaScript Course](https://tylermcginnis.com/courses/advanced-javascript/)
 6. [What the heck is the event loop anyway?](https://www.youtube.com/watch?v=8aGhZQkoFbQ&t=1062s)
-7. [https://www.youtube.com/watch?v=4xsvn6VUTwQ&t=625s](Async Javascript Part I - Javascript event loop, stack & queue)
+7. [Async Javascript Part I - Javascript event loop, stack & queue](https://www.youtube.com/watch?v=4xsvn6VUTwQ&t=625s)
